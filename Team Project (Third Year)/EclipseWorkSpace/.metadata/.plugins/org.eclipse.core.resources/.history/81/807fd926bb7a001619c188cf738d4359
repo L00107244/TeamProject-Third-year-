@@ -1,0 +1,39 @@
+package bbb;
+import aaa.name;
+public class Customer extends Person
+{
+  private String emailAddress;
+  
+  public Customer()
+  {
+	  super();
+	  emailAddress=null;
+  }
+  public Customer(String t, String Fn, String sn, String phoneNumber)
+  {
+	  super(t,Fn, sn, phoneNumber);
+	  String email = null;
+	  emailAddress =  email;
+	  
+  }
+  @Override
+ public String toString()
+ {
+	  return super.toString() + ","+emailAddress;
+ }
+  public boolean equals(Customer customerIn)
+  {
+	  if(super.equals(CustomerIn) && emailAddress.equals(customerIn.emailAddress))
+		  return true;
+	  else
+		  return false;
+  }
+  public void setEmailAddress(String emailIn)
+  {
+	  emailAddress = emailIn;
+  }
+  public String getEmailAddress()
+  {
+	  return emailAddress;
+  }
+}

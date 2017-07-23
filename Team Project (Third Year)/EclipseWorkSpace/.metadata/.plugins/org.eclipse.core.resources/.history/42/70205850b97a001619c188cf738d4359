@@ -1,0 +1,47 @@
+package bbb;
+
+import aaa.name;
+
+public abstract class Person 
+{
+  protected name name;
+  protected String phoneNumber;
+  
+  public Person()
+  {
+	  name=new Name();
+	  phoneNumber=null;
+  }
+  public Person(String t, String fN, String sn, String phoneNumber)
+  {
+	  name=new Name(t, fN, sn);
+	  this.phonrNumber=phoneNumber;
+  }
+  public String toString()
+  {
+	  return name+","+phoneNumber;
+  }
+  public boolean equals(Person personIn)
+  {
+	  if(name.equals(personIn.name)&& phoneNumber.equals(PersonIn.phoneNumber))
+		  return true;
+	  else
+		  return false;
+  }
+  public void setName(Name nameIn)
+  {
+	  name = nameIn;
+  }
+  public Name getName()
+  {
+	  return name;
+  }
+  public void setPhoneNumber(String phoneNumberIn)
+  {
+	  phoneNumber = phoneNumberIn;
+  }
+  public String getPhoneNumber()
+  {
+	  return phoneNumber;
+  }
+}

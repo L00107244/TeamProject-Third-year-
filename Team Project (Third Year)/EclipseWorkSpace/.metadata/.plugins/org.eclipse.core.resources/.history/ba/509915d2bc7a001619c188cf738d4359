@@ -1,0 +1,35 @@
+package bbb;
+import aaa.name;
+public class CustomerTester 
+{
+  public static void main(String[] args)
+  {
+	  Customer customerA = new Customer();
+	  
+	  System.out.println(customerA);
+	  
+	  customerA.setName(new name("Mr", "Homer", "Simpson"));
+	  customerA.setPhoneNumber("087 1234567");
+	  customerA.setEmailAddress("homer@hotmail.com");
+	  
+	  System.out.println(customerA);
+	  
+	  Customer customerB = new Customer();
+      System.out.println(customerB);
+	  
+	  customerB.setName(new name("Ms", "lisa", "Simpson"));
+	  customerB.setPhoneNumber("087 1234589");
+	  customerB.setEmailAddress("lisa@hotmail.com");
+	  
+	  System.out.println(customerB);
+	  
+	  if(customerA.equals(customerB));
+	  System.out.println(customerA+ " is the same as "+customerB);
+	  else 
+		  System.out.println(customerA+ " is not the same as "+customerB);
+	  if(customerB.getName().isFemale())
+		  System.out.println(customerB.getName()+ "is female");
+	  else
+		  System.out.println(customerB.getName()+ "is not female");
+  }
+}
